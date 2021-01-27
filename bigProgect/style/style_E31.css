@@ -1,0 +1,23 @@
+.car{
+    background: url("../img/attr/style.jpg") no-repeat ;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+.eye {
+    background: url("../img/BMWeyes/3.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.tuning{
+    background: url("../img/salon/salon_3.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.underHood img {
+    display: block;
+    width: 65%;
+    margin: 30px auto;
+}

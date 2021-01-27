@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+header{
+    position: relative;
+}
+.mainNavigator {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mainNavigator ul {
+    display: flex;
+    padding-left: 0;
+    width: 800px;
+    justify-content: space-around;
+    margin: 15px auto;
+}
+.mainNavigator li{
+    list-style-type: none;
+}
+.mainNavigator li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    vertical-align: -20px;
+    transition: .3s color ease;
+}
+.mainNavigator li #models{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    vertical-align: -20px;
+    transition: .3s color ease;
+}
+.boder{
+    border-right: 2px solid #ffffff;
+    padding-right: 30px;
+}
+.mainNavigator a span{
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.mainNavigator svg {
+    height: 50px;
+    width: 50px;
+}
+.line{
+    height: 2px;
+    background-color: #fff;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.mainNavigator a:hover:not(.endList){
+    color: #0653b6;
+    border-bottom: 3px solid #0653b6;
+    z-index: 3;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-bottom: 32.5px;
+}
+.mainNavigator #models:hover{
+    color: #0653b6;
+    border-bottom: 3px solid #0653b6;
+    z-index: 3;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-bottom: 32.5px;
+}
+li.hovering {
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: all 10s ease 2s;
+}
+.model{
+    position: absolute;
+    display: none;
+    width: 100px;
+    left: 0;
+    top: 73px;
+}
+.hovering:hover .model{
+    display: flex;
+    flex-direction: column;
+}
+.model a {
+    padding: 10px 0;
+}
+
+.mainNavigator a.series:hover{
+    padding-bottom: 7px;
+}
+.smallNavigator {
+    display: none;
+}
+.video {
+    height: 90vh;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -2;
+}
+.mainBackground {
+    display: none;
+}
+.number h1 {
+    position: absolute;
+    color: rgba(250,250,250, 0.3);
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    left:10px;
+    bottom: -500px;
+    font-size: 700px;
+    z-index: -1;
+}
+.preview nav {
+    margin: 100px 150px 25px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+}
+.stylezeLink {
+    text-decoration: none;
+    color: #0653b6;
+}
+.preview h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 25px 150px 100px;
+    text-align: center;
+}
+.reason {
+    margin: 200px 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Exo 2', sans-serif;
+}
+.reasons p{
+    color: #000;
+    font-weight: 400;
+    font-size: 24px;
+}
+.reasons p:before{
+    content: "";
+    width: 60px;
+    height: 4px;
+    display: block;
+    background-color: #0F0E0E;
+    flex-shrink: 0;
+    margin-bottom: 25px;
+    margin-left: 427px
+}
+.reason ol li{
+    list-style-type: decimal;
+    margin-bottom: 15px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+.attributes {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 200px;
+}
+.car{
+    background: url("../img/attr/BBS_e36.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+.eye {
+    background: url("../img/BMWeyes/1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.tuning{
+    background: url("../img/salon/salon.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.triangle {
+    background-color: rgba(12, 19, 27, 0.6);
+    padding: 300px;
+    opacity: 0;
+    transform: translate(265px, 145px) rotate(45deg);
+    transition: all 0.35s ease-in-out;
+}
+.car:hover .triangle{
+    opacity: 1;
+    transform: translate(-102px, -91px) rotate(45deg)
+}
+.car h2 {
+    border-bottom: 2px solid rgba(243, 243, 243, 0.3);
+    color: #f3f3f3;
+    padding-bottom: 30px;
+    font-family: Raleway, serif;
+    text-align: center;
+    background: transparent;
+    margin: 20px 40px 0 40px;
+    transform: translate(370px, -730px);
+    transition: all 0.2s ease-in-out;
+}
+.car:hover h2{
+    transform: translate(0px, -520px);
+    transition-delay: 0.3s;
+}
+.underHood img {
+    display: block;
+    width: 65%;
+    margin: 30px auto;
+}
+.blockquote{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.blockquote > div{
+    flex-basis: 40%;
+    margin: 150px 0;
+}
+blockquote {
+    font: bold 36px/45px 'Playfair Display', serif;
+}
+cite {
+    display: block;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+}
+.years{
+    width: 80%;
+    margin: 200px auto;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #0653b6;
+    padding: 25px 25px;
+    border-radius: 25px;
+}
+footer {
+    background-color: #262626;
+    padding: 100px 50px;
+}
+.footerNavigation {
+    display: flex;
+    justify-content: space-around;
+}
+.footerNavigation a, p{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #dfdfdf;
+}
+.footerNavigation h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+.footerNavigation li {
+    padding:15px 0;
+}
+.quickLinks a, .modelsLinks a, .oficialLinks a, .contacts a {
+     transition: all 0.3s ease;
+ }
+.quickLinks a:hover, .modelsLinks a:hover, .oficialLinks a:hover, .contacts a:hover {
+    color: #0653b6;
+}
+.contacts a{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-title {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+}
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+}
+.modal-body h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #262626;
+    border-bottom: 1px solid #262626;
+}
+.modal-body li {
+    padding: 15px 0;
+}
+.modal-body a {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #262626;
+    transition: all 0.3s ease;
+}
+.modal-body a:hover{
+    color: #0653b6;
+}
+.mini {
+    display: none;
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Галерея</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style_galary.css">
+    <link rel="stylesheet" href="style/media_galary.css">
+</head>
+<body>
+<header>
+    <nav class="mainNavigator">
+        <ul>
+            <li><a href="index.html" title="Главная" target="_blank">Главная</a></li>
+            <li class="hovering">
+                <span id="models">Модели</span>
+                <div class="model">
+                    <a href="BMW_E30.html" class="series" target="_blank" title="BMW E30">BMW E30</a>
+                    <a href="BMW_E31.html" class="series" target="_blank" title="BMW E31">BMW E31</a>
+                    <a href="BMW_E32.html" class="series" target="_blank" title="BMW E32">BMW E32</a>
+                    <a href="BMW_E36.html" class="series" target="_blank" title="BMW E36">BMW E36</a>
+                </div>
+            </li>
+            <li><a href="galary.html" title="Галерея">Галерея</a></li>
+            <li><a href="blog.html" title="Блог">Блог</a></li>
+            <li class="boder"><a href="contact.html" title="Контакты">Контакты</a></li>
+            <li><a href="#" class="endList " title="BMW in your country" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span>BMW in your country</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1015" viewBox="-.68 -.847 1015 1015" width="1015">
+                    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-74.1968" x2="1001.2502" y1="-54.6484" y2="984.5881">
+                        <stop offset="0" stop-color="#dff4ff"/>
+                        <stop offset=".0984" stop-color="#d6eaf5"/>
+                        <stop offset=".2678" stop-color="#bfd0d9"/>
+                        <stop offset=".4879" stop-color="#98a5ac"/>
+                        <stop offset=".7469" stop-color="#646b6e"/>
+                        <stop offset="1" stop-color="#2b2b2b"/>
+                    </linearGradient>
+                    <radialGradient id="b" cx="-6.3174" cy="33.522" gradientUnits="userSpaceOnUse" r="720.1076">
+                        <stop offset="0" stop-color="#fff"/>
+                        <stop offset=".3064" stop-color="#a8a8a8"/>
+                        <stop offset=".6461" stop-color="#4f4f4f"/>
+                        <stop offset=".8853" stop-color="#161616"/>
+                        <stop offset="1"/>
+                    </radialGradient>
+                    <linearGradient id="c" gradientTransform="matrix(-1 0 0 -1 930.9756 1169.3057)" gradientUnits="userSpaceOnUse" x1="54.041" x2="738.989" y1="304.8472" y2="966.7329">
+                        <stop offset="0" stop-color="#dff4ff"/>
+                        <stop offset=".0855" stop-color="#d6eaf5"/>
+                        <stop offset=".2327" stop-color="#bed0d9"/>
+                        <stop offset=".4239" stop-color="#96a4ac"/>
+                        <stop offset=".6516" stop-color="#5f686d"/>
+                        <stop offset=".9075" stop-color="#1a1d1e"/>
+                        <stop offset="1"/>
+                    </linearGradient>
+                    <linearGradient id="d">
+                        <stop offset="0" stop-color="#fff"/>
+                        <stop offset=".3102" stop-color="#fdfdfd"/>
+                        <stop offset=".4505" stop-color="#f6f6f6"/>
+                        <stop offset=".5567" stop-color="#e9e9e9"/>
+                        <stop offset=".6456" stop-color="#d7d7d7"/>
+                        <stop offset=".7238" stop-color="#bfbfbf"/>
+                        <stop offset=".7944" stop-color="#a2a2a2"/>
+                        <stop offset=".8593" stop-color="#808080"/>
+                        <stop offset=".9199" stop-color="#575757"/>
+                        <stop offset=".9746" stop-color="#2b2b2b"/>
+                        <stop offset="1" stop-color="#141414"/>
+                    </linearGradient>
+                    <radialGradient id="e" cx="-135.6465" cy="-39.812" gradientUnits="userSpaceOnUse" r="1730.3135" xlink:href="#d"/>
+                    <radialGradient id="f" cx="-135.7231" cy="-39.8115" gradientUnits="userSpaceOnUse" r="1730.4609" xlink:href="#d"/>
+                    <radialGradient id="g" cx="-135.8174" cy="-40.3198" gradientUnits="userSpaceOnUse" r="1731.7866" xlink:href="#d"/>
+                    <linearGradient id="h">
+                        <stop offset="0" stop-color="#e6e6e6"/>
+                        <stop offset=".1045" stop-color="#d6d6d6"/>
+                        <stop offset=".3074" stop-color="#adadad"/>
+                        <stop offset=".5884" stop-color="#6c6c6c"/>
+                        <stop offset=".9335" stop-color="#121212"/>
+                        <stop offset="1"/>
+                    </linearGradient>
+                    <radialGradient id="i" cx="174.2534" cy="200.0752" gradientUnits="userSpaceOnUse" r="466.7181" xlink:href="#h"/>
+                    <radialGradient id="j" cx="301.9058" cy="262.8477" gradientUnits="userSpaceOnUse" r="678.7418">
+                        <stop offset="0" stop-color="#fff"/>
+                        <stop offset=".3435" stop-color="#fdfdfd"/>
+                        <stop offset=".4814" stop-color="#f6f6f6"/>
+                        <stop offset=".5824" stop-color="#eaeaea"/>
+                        <stop offset=".6654" stop-color="#d8d8d8"/>
+                        <stop offset=".7373" stop-color="#c2c2c2"/>
+                        <stop offset=".8016" stop-color="#a6a6a6"/>
+                        <stop offset=".8602" stop-color="#848484"/>
+                        <stop offset=".9126" stop-color="#5f5f5f"/>
+                        <stop offset=".9494" stop-color="#404040"/>
+                        <stop offset=".9566" stop-color="#404040"/>
+                        <stop offset="1" stop-color="#404040"/>
+                        <stop offset="1"/>
+                    </radialGradient>
+                    <linearGradient id="k">
+                        <stop offset=".1685" stop-color="#fff"/>
+                        <stop offset=".1957" stop-color="#e0eff7"/>
+                        <stop offset=".2406" stop-color="#b2d9ec"/>
+                        <stop offset=".2872" stop-color="#8bc5e2"/>
+                        <stop offset=".335" stop-color="#6bb5da"/>
+                        <stop offset=".3844" stop-color="#52a9d4"/>
+                        <stop offset=".4359" stop-color="#41a0cf"/>
+                        <stop offset=".4911" stop-color="#369bcd"/>
+                        <stop offset=".5562" stop-color="#39c"/>
+                        <stop offset=".606" stop-color="#3396c8"/>
+                        <stop offset=".6553" stop-color="#328ebc"/>
+                        <stop offset=".7045" stop-color="#3180a8"/>
+                        <stop offset=".7536" stop-color="#2f6d8c"/>
+                        <stop offset=".8027" stop-color="#2d5468"/>
+                        <stop offset=".8512" stop-color="#2a373d"/>
+                        <stop offset=".8708" stop-color="#292929"/>
+                    </linearGradient>
+                    <radialGradient id="l" cx="102.6182" cy="5.5596" gradientUnits="userSpaceOnUse" r="1202.0598" xlink:href="#k"/>
+                    <radialGradient id="m" cx="102.6182" cy="5.5513" gradientUnits="userSpaceOnUse" r="1202.0366" xlink:href="#k"/>
+                    <radialGradient id="n" cx="180.6274" cy="205.9541" gradientUnits="userSpaceOnUse" r="457.773" xlink:href="#h"/>
+                    <linearGradient id="o">
+                        <stop offset="0" stop-color="#f0f4ff"/>
+                        <stop offset=".1086" stop-color="#ebeff9"/>
+                        <stop offset=".2475" stop-color="#dce0ea"/>
+                        <stop offset=".4028" stop-color="#c4c7cf"/>
+                        <stop offset=".5701" stop-color="#a2a4ab"/>
+                        <stop offset=".7469" stop-color="#76777c"/>
+                        <stop offset=".9291" stop-color="#414243"/>
+                        <stop offset="1" stop-color="#2b2b2b"/>
+                    </linearGradient>
+                    <linearGradient id="p" gradientUnits="userSpaceOnUse" x1="446.8354" x2="893.2535" xlink:href="#o" y1="91.6548" y2="523.0419"/>
+                    <linearGradient id="q" gradientUnits="userSpaceOnUse" x1="84.4878" x2="530.9141" xlink:href="#o" y1="455.8701" y2="887.2653"/>
+                    <linearGradient id="r" gradientUnits="userSpaceOnUse" x1="300.459" x2="531.948" y1="302.0415" y2="525.7363">
+                        <stop offset="0" stop-color="#c2d7e8"/>
+                        <stop offset=".1337" stop-color="#bacfe1"/>
+                        <stop offset=".3425" stop-color="#a4bacd"/>
+                        <stop offset=".6001" stop-color="#8098ac"/>
+                        <stop offset=".894" stop-color="#4e697f"/>
+                        <stop offset="1" stop-color="#3a566d"/>
+                    </linearGradient>
+                    <linearGradient id="s" gradientUnits="userSpaceOnUse" x1="184.5244" x2="626.4575" y1="356.8545" y2="783.9076">
+                        <stop offset="0" stop-color="#f0f4ff"/>
+                        <stop offset=".0973" stop-color="#e8ebf6"/>
+                        <stop offset=".2568" stop-color="#d1d4dd"/>
+                        <stop offset=".4587" stop-color="#abaeb5"/>
+                        <stop offset=".6951" stop-color="#78797d"/>
+                        <stop offset=".9578" stop-color="#363637"/>
+                        <stop offset="1" stop-color="#2b2b2b"/>
+                    </linearGradient>
+                    <linearGradient id="t" gradientUnits="userSpaceOnUse" x1="510.2568" x2="665.2748" y1="515.2671" y2="665.0656">
+                        <stop offset="0" stop-color="#d9def0"/>
+                        <stop offset=".1229" stop-color="#d4daec"/>
+                        <stop offset=".2629" stop-color="#c7cfe2"/>
+                        <stop offset=".4114" stop-color="#b0bcd1"/>
+                        <stop offset=".5657" stop-color="#90a1b8"/>
+                        <stop offset=".7246" stop-color="#677f99"/>
+                        <stop offset=".8849" stop-color="#355674"/>
+                        <stop offset=".9719" stop-color="#173d5d"/>
+                    </linearGradient>
+                    <linearGradient id="u" gradientUnits="userSpaceOnUse" x1="351.6777" x2="793.1321" xlink:href="#o" y1="194.7759" y2="621.3665"/>
+                    <path d="m506.86 0c-279.92 0-506.86 226.918-506.86 506.848 0 279.926 226.94 506.848 506.86 506.848 279.94 0 506.857-226.922 506.857-506.848.001-279.93-226.916-506.848-506.857-506.848zm0 988.352c-265.939 0-481.495-215.574-481.495-481.504 0-265.927 215.556-481.512 481.495-481.512 265.937 0 481.511 215.584 481.511 481.512 0 265.93-215.574 481.504-481.511 481.504z" fill="url(#a)"/>
+                    <path d="m992.003 506.848c0 267.914-217.227 485.133-485.143 485.133-267.919 0-485.123-217.219-485.123-485.133 0-267.929 217.204-485.133 485.123-485.133 267.916 0 485.143 217.204 485.143 485.133z" fill="#333"/>
+                    <path d="m988.371 506.848c0 265.93-215.574 481.504-481.511 481.504-265.939 0-481.495-215.574-481.495-481.504 0-265.927 215.556-481.512 481.495-481.512 265.937 0 481.511 215.585 481.511 481.512z" fill="url(#b)"/>
+                    <path d="m829.676 506.848c0 178.28-144.53 322.803-322.815 322.803-178.289 0-322.819-144.522-322.819-322.803 0-178.289 144.53-322.816 322.819-322.816 178.285 0 322.815 144.528 322.815 322.816z" fill="url(#c)"/>
+                    <polygon points="519.79 175.308 553.324 86.431 553.324 175.308 578.792 175.308 578.792 48.021 540.518 48.021 505.704 139.157 506.035 139.157 471.223 48.021 432.947 48.021 432.947 175.308 458.416 175.308 458.416 86.431 491.949 175.308"/>
+                    <polygon points="869.313 232.384 825.798 295.831 894.146 262.216 912.684 284.447 805.115 338.459 783.379 312.144 825.077 249.275 824.83 248.965 755.473 278.651 733.489 252.513 806.021 156.469 824.563 178.712 779.146 239.871 849.433 208.522"/>
+                    <path d="m281.427 208.068c-10.251-9.951-26.069-12.951-40.939-3.733 2.847-7.363 1.691-14.858.186-19.015-6.414-11.662-8.662-13.137-13.899-17.561-17.097-14.324-35.082-2.093-47.93 13.219l-62.116 74.028 97.651 81.925 65.5-78.047c14.971-17.838 17.282-35.523 1.547-50.816zm-126.321 35.7l37.311-44.464c4.33-5.146 14.106-4.94 20.375.341 6.908 5.795 6.928 14.002 2.289 19.54l-36.896 43.95zm102.934 7.393l-38.896 46.353-24.355-20.47 39.185-46.711c4.434-5.281 14.313-6.817 20.974-1.229 7.505 6.312 8.247 15.912 3.092 22.057z" fill="#333"/>
+                    <polygon fill="url(#e)" points="520.06 170.39 553.592 81.515 553.592 170.39 579.063 170.39 579.063 43.103 540.784 43.103 505.973 134.236 506.303 134.236 471.491 43.103 433.212 43.103 433.212 170.39 458.683 170.39 458.683 81.515 492.218 170.39"/>
+                    <polygon fill="url(#f)" points="869.563 223.844 826.067 287.293 894.413 253.667 912.934 275.909 805.38 329.921 783.645 303.596 825.345 240.735 825.1 240.416 755.72 270.114 733.759 243.963 806.291 147.93 824.83 170.164 779.419 231.322 849.68 199.985"/>
+                    <path d="m276.868 205.563c-10.23-9.951-26.069-12.953-40.916-3.743 2.824-7.364 1.67-14.86.166-18.996-6.415-11.682-8.642-13.137-13.923-17.57-17.096-14.333-35.059-2.095-47.887 13.231l-62.139 74.016 97.653 81.926 65.499-78.059c14.953-17.839 17.282-35.512 1.547-50.805zm-126.317 35.698l37.307-44.453c4.312-5.155 14.086-4.949 20.376.319 6.909 5.806 6.93 14.023 2.268 19.54l-36.873 43.959zm102.952 7.393l-38.896 46.352-24.398-20.47 39.207-46.721c4.433-5.269 14.291-6.806 20.953-1.216 7.547 6.32 8.29 15.9 3.134 22.055z" fill="url(#g)"/>
+                    <path d="m194.788 506.852c0-172.358 139.724-312.082 312.073-312.082 172.367 0 312.072 139.724 312.072 312.082 0 172.351-139.705 312.071-312.072 312.071-172.35 0-312.073-139.72-312.073-312.071z" fill="url(#i)"/>
+                    <path d="m203.759 506.852c0-167.399 135.702-303.112 303.102-303.112s303.12 135.712 303.12 303.112c0 167.401-135.721 303.113-303.12 303.113s-303.102-135.712-303.102-303.113z" fill="url(#j)"/>
+                    <path d="m203.284 506.852h303.576v-303.575c-167.669 0-303.576 135.908-303.576 303.575z" fill="url(#l)"/>
+                    <path d="m506.86 506.852v303.579c167.667 0 303.576-135.933 303.576-303.579z" fill="url(#m)"/>
+                    <polygon fill="url(#n)" points="812.95 501.458 512.242 501.458 512.242 200.75 501.476 200.75 501.476 501.458 200.768 501.458 200.768 512.225 501.476 512.225 501.476 812.942 512.242 812.942 512.242 512.225 812.95 512.225"/>
+                    <path d="m512.242 209.267c160.141 2.848 289.366 132.062 292.232 292.191h5.36c-2.863-163.099-134.482-294.736-297.593-297.583v5.392z" fill="url(#p)"/>
+                    <path d="m208.729 501.418c2.845-160.347 132.256-289.747 292.604-292.604v-5.383c-163.336 2.856-295.12 134.669-297.987 297.986h5.383z" fill="#c2d7e8"/>
+                    <path d="m501.476 804.433c-160.139-2.844-289.364-132.069-292.211-292.208h-5.381c2.866 163.108 134.484 294.75 297.593 297.594v-5.386z" fill="url(#q)"/>
+                    <path d="m804.475 512.225c-2.866 160.139-132.092 289.364-292.232 292.208v5.386c163.11-2.844 294.747-134.485 297.593-297.594z" fill="#12404f"/>
+                    <polygon fill="url(#r)" points="495.724 203.432 495.724 495.551 203.614 495.551 203.614 501.315 495.724 501.315 501.476 501.315 501.476 495.551 501.476 203.432"/>
+                    <polygon fill="url(#s)" points="495.229 806.995 495.229 518.391 206.029 518.391 206.029 512.7 495.229 512.7 500.92 512.7 500.92 518.391 500.92 806.995"/>
+                    <polygon fill="url(#t)" points="518.409 806.995 518.409 518.391 807.011 518.391 807.011 512.7 518.409 512.7 512.737 512.7 512.737 518.391 512.737 806.995"/>
+                    <polygon fill="url(#u)" points="518.409 206.011 518.409 494.613 807.011 494.613 807.011 500.295 518.409 500.295 512.737 500.295 512.737 494.613 512.737 206.011"/>
+                </svg>
+            </a></li>
+        </ul>
+        <div class="line"></div>
+    </nav>
+    <div class="smallNavigator">
+        <div class="hamMenu">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a href="index.html" class="menu__item" title="Главная">Главная</a></li>
+                    <li><a href="BMW_E30.html" class="menu__item" title="BMW E30">BMW E30</a></li>
+                    <li><a href="BMW_E31.html" class="menu__item" title="BMW E31">BMW E31</a></li>
+                    <li><a href="BMW_E32.html" class="menu__item" title="BMW E32">BMW E32</a></li>
+                    <li><a href="BMW_E36.html" class="menu__item" title="BMW E36">BMW E36</a></li>
+                    <li><a href="galary.html" class="menu__item" title="Галерея">Галерея</a></li>
+                    <li><a href="blog.html" class="menu__item" title="Блог">Блог</a></li>
+                    <li><a href="contact.html" class="menu__item" title="Контакты">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bmwInCountry">
+            <a href="#" class="endList " title="BMW in your country" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <svg width="350px" height="350px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+                    <title>BMW-logo-grey-fallback-53px</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="BMW-logo-grey-fallback-53px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="BMW-logo">
+                            <g id="BMW-logo-fallback">
+                                <g id="BMW_Grey-Colour_RGB-2">
+                                    <g id="BMW_Grey-Colour_RGB" fill-rule="nonzero">
+                                        <path d="M26.5,0 C11.8648577,0 0,11.8648577 0,26.5 C0,41.1351423 11.8648577,53 26.5,53 C41.1351423,53 53,41.1351423 53,26.5 C53,11.8648577 41.1351423,0 26.5,0 L26.5,0 Z M51.2767521,26.5 C51.2767521,40.1831491 40.1847072,51.2767521 26.5,51.2767521 C12.8152928,51.2767521 1.72324788,40.1831491 1.72324788,26.5 C1.72324788,12.8168509 12.8168509,1.72324788 26.5,1.72324788 C40.1831491,1.72324788 51.2767521,12.8168509 51.2767521,26.5 Z" id="Shape" fill="#6F6F6F"></path>
+                                        <path d="M26.5,10.7962963 L26.5,11.6573064 L26.5,11.6573064 C34.6834887,11.6573064 41.3426936,18.3149544 41.3426936,26.5 L42.2037037,26.5 C42.2037037,17.8276195 35.1723805,10.7962963 26.5,10.7962963 L26.5,10.7962963 M26.5,41.3426936 C18.3165113,41.3426936 11.6573064,34.6850456 11.6573064,26.5 L10.7962963,26.5 C10.7962963,35.1723805 17.8276195,42.2037037 26.5,42.2037037" id="Shape" fill="#6F6F6F"></path>
+                                        <g id="Group" transform="translate(7.197531, 3.271605)" fill="#6F6F6F">
+                                            <path d="M31.9907293,12.0458337 C32.3503156,12.4292226 32.8686803,13.0475919 33.159774,13.4232513 L38.5208791,10.0438631 C38.2531352,9.69603039 37.8266129,9.16732465 37.5074995,8.79475716 L34.1124442,11.0239784 L33.8805033,11.2218566 L34.0532915,10.971417 L35.5523462,8.00015263 L34.492267,6.94737892 L31.4988277,8.43610297 L31.2466502,8.60770045 L31.4474582,8.37735789 L33.6937052,5.00724529 C33.2983159,4.67332587 32.9184931,4.36723308 32.4343748,3.9962115 L29.0315362,9.31573328 C29.4627285,9.64501492 30.030906,10.1288889 30.3936056,10.4581705 L33.5971929,8.80712454 L33.8026707,8.65716999 L33.6516756,8.86123185 L31.9907293,12.0458337 Z" id="W_61_"></path>
+                                            <path d="M19.8255038,5.30406254 L21.2903121,2.04525641 L21.3837112,1.75616877 L21.3572481,2.0576238 L21.5113565,6.41248949 C22.0250513,6.46041311 22.5558692,6.53152557 23.0789038,6.61809727 L22.8407363,0.16850563 C22.1091104,0.0881176231 21.3805979,0.0309184643 20.6520853,0 L19.2090701,3.55716931 L19.1577006,3.82152218 L19.1063311,3.55716931 L17.6648726,0 C16.93636,0.0309184643 16.2078475,0.0881176231 15.4762216,0.16850563 L15.2380541,6.61809727 C15.7610887,6.53152557 16.2919066,6.46195903 16.8056014,6.41248949 L16.9597098,2.0576238 L16.9332467,1.75616877 L17.0266458,2.04525641 L18.4914541,5.30406254 L19.8255038,5.30406254 Z" id="M_61_"></path>
+                                            <path d="M7.97783503,10.4442572 C8.82465303,9.55844322 9.30410145,8.53504206 8.45728345,7.55801859 C7.99651483,7.02776692 7.22285942,6.91182268 6.58151932,7.17308371 L6.51769663,7.19781848 L6.53793309,7.14216524 C6.63288879,6.89017976 6.69359817,6.08629969 6.00400189,5.53131325 C5.66776533,5.26077669 5.24591298,5.16029168 4.81939068,5.20357753 C4.02394215,5.28396554 3.41217841,5.82349274 1.74656213,7.66777913 C1.24376394,8.22431149 0.512138092,9.10239588 0.0731625846,9.67129562 C0.0731625846,9.67129562 4.6481591,13.9813295 4.6481591,13.9813295 C6.16433692,12.3148243 6.78232726,11.6949091 7.97783503,10.4442572 Z M2.00807945,9.38993759 C2.92961669,8.27068919 3.90875,7.25501764 4.35239546,6.8530776 C4.49249403,6.7263119 4.6450458,6.59954619 4.83028724,6.55007665 C5.13072083,6.46814272 5.44049432,6.6799342 5.51054361,6.986027 C5.58059289,7.29366572 5.38601155,7.5858452 5.1696371,7.82700923 C4.68240542,8.37272012 2.89537037,10.2293739 2.89537037,10.2293739 C2.89537037,10.2293739 2.00807945,9.38993759 2.00807945,9.38993759 Z M3.79978445,11.0780857 C3.79978445,11.0780857 5.54011997,9.2508045 6.10829749,8.66644553 C6.33401185,8.43455705 6.47878037,8.29387804 6.63444544,8.2181278 C6.83525339,8.12073464 7.05474114,8.10063763 7.25087913,8.23049518 C7.44390382,8.35880681 7.53263292,8.57987383 7.48437674,8.79939493 C7.42678067,9.06065595 7.21196286,9.30954959 7.03450468,9.49969814 C6.79478047,9.75477547 4.73066159,11.9484405 4.72754829,11.9515324 L3.79978445,11.0780857 Z" id="B_x5F_22d_61_"></path>
+                                        </g>
+                                        <path d="M26.5,10.7962963 L26.5,26.5 L10.7962963,26.5 C10.7962963,17.8213916 17.8213916,10.7962963 26.5,10.7962963 Z" id="Path" fill="#0166B1"></path>
+                                        <path d="M42.2037037,26.5 C42.2037037,35.1786084 35.1786084,42.2037037 26.5,42.2037037 L26.5,26.5 L42.2037037,26.5 Z" id="Path" fill="#0166B1"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">BMW in your country</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="africa">
+                        <h2>Африка</h2>
+                        <ul>
+                            <li><a href="https://www.bmw.tm.dz/fr/index.html" target="_blank" title="Алжир">Алжир</a></li>
+                            <li><a href="https://www.bmw.co.ao/pt/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Ангола">Ангола</a></li>
+                            <li><a href="https://www.bmw-eg.com/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Египет">Египет</a></li>
+                            <li><a href="https://www.bmw-ghana.com/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Гана">Гана</a></li>
+                            <li><a href="https://www.bmw.ly/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Ливия">Ливия</a></li>
+                            <li><a href="https://www.bmw.mu/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Маврикий">Маврикий</a></li>
+                            <li><a href="https://www.bmw.ma/fr/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Марокко">Марокко</a></li>
+                            <li><a href="https://www.bmw-nigeria.com/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Нигерия">Нигерия</a></li>
+                            <li><a href="https://www.bmw.sn/fr/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Сенегал">Сенегал</a></li>
+                            <li><a href="https://www.bmw.co.za/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Южная Африка">Южная Африка</a></li>
+                            <li><a href="https://www.bmw-tunisia.com/fr/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Тунис">Тунис</a></li>
+                        </ul>
+                    </div>
+                    <div class="asia">
+                        <h2>Азиатско-Тихоокенский регион</h2>
+                        <ul>
+                            <li><a href="https://www.bmw-abudhabi.com/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Абу Даби">Абу Даби</a></li>
+                            <li><a href="https://www.bmw.com.au/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Австралия">Австралия</a></li>
+                            <li><a href="https://www.bmw.com.bd/en/index.html?" target="_blank" title="Бангладеш">Бангладеш</a></li>
+                            <li><a href="https://www.bmw.com.kh/en/index.html" target="_blank" title="Камбожда">Камбожда</a></li>
+                            <li><a href="https://www.bmw.com.cn/zh/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Китай">Китай</a></li>
+                            <li><a href="https://www.bmw-dubai.com/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Дубаи (ОАЭ)">Дубаи (ОАЭ)</a></li>
+                            <li><a href="https://www.bmw.in/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Индия">Индия</a></li>
+                            <li><a href="https://www.bmw.co.id/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Индонезия">Индонезия</a></li>
+                            <li><a href="https://www.bmw-iraq.com/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Ирак">Ирак</a></li>
+                            <li><a href="https://www.bmw.co.il/he/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Израиль">Израиль</a></li>
+                            <li><a href="https://www.bmw.co.jp/ja/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Япония">Япония</a></li>
+                        </ul>
+                    </div>
+                    <div class="europ">
+                        <h2>Европа</h2>
+                        <ul>
+                            <li><a href="https://www.bmw.am/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Армения">Армения</a></li>
+                            <li><a href="https://www.bmw.at/de/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Австрия">Австрия</a></li>
+                            <li><a href="https://www.bmw.by/ru/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Беларусь">Беларусь</a></li>
+                            <li><a href="https://www.bmw.be/fr/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Бельгия">Бельгия</a></li>
+                            <li><a href="https://www.bmw.bg/bg/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Болгария">Болгария</a></li>
+                            <li><a href="https://www.bmw.cz/cs/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Чехия">Чехия</a></li>
+                            <li><a href="https://www.bmw.dk/da/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Дания">Дания</a></li>
+                            <li><a href="https://www.bmw.ee/et/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Эстония">Эстония</a></li>
+                            <li><a href="https://www.bmw.fr/fr/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Франция">Франция</a></li>
+                            <li><a href="https://www.bmw.com.ge/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Грузия">Грузия</a></li>
+                            <li><a href="https://www.bmw.de/de/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Германия">Германия</a></li>
+                        </ul>
+                    </div>
+                    <div class="america">
+                        <h2>Северная и Южная Америка</h2>
+                        <ul>
+                            <li><a href="https://www.bmw.com.ar/es/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Аргентина">Аргентина</a></li>
+                            <li><a href="https://www.bmw.com.br/pt/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Бразилия">Бразилия</a></li>
+                            <li><a href="https://www.bmw.ca/en/home.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Канада">Канада</a></li>
+                            <li><a href="https://www.bmw.cl/es/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Чили">Чили</a></li>
+                            <li><a href="https://www.bmw.com.co/es/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Колумбия">Колумбия</a></li>
+                            <li><a href="https://www.bmw.co.cr/es/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Коста-Рика">Коста-Рика</a></li>
+                            <li><a href="https://www.bmw.com.ec/es/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Эквадор">Эквадор</a></li>
+                            <li><a href="https://www.bmw.com.mx/es/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Мексика">Мексика</a></li>
+                            <li><a href="https://www.bmwusa.com/?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="США">США</a></li>
+                            <li><a href="https://www.bmw.com.uy/es/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-" target="_blank" title="Уругвай">Уругвай</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <video autoplay muted loop id="video">
+            <source src="video/festival.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="mainBackground">
+        <img src="img/collection.jpg" alt="Background Image">
+    </div>
+    <div class="number">
+        <h1>Галерея</h1>
+    </div>
+</header>
+<main>
+    <article>
+        <section id="posterBMW">
+            <img src="img/galary/BMW_%2080s.jpg" alt="BMW poster" title="BMW poster">
+            <h2>Быть лучшим</h2>
+        </section>
+        <section id="exibition">
+            <img src="img/galary/BMW_3_0_Exhibit.jpg" alt="BMW poster" title="BMW poster">
+            <h2>Готовность №1</h2>
+        </section>
+        <section id="generik">
+            <img src="img/galary/BMW_Vision.jpg" alt="BMW poster" title="BMW poster">
+            <h2>Будущее за электрическвом</h2>
+        </section>
+        <section id="old_video">
+            <video autoplay muted loop id="video_old">
+                 <source src="video/bmw_explained.mp4" type="video/mp4" >
+            </video>
+            <h2>Не упуская традиций</h2>
+        </section>
+        <section id="sketh">
+            <img src="img/galary/street_race.gif" alt="BMW poster" title="BMW poster">
+            <h2>Повод для творчества</h2>
+        </section>
+        <section id="cyberpank">
+            <img src="img/galary/cyberpunk_bmw.jpg" alt="BMW poster" title="BMW poster">
+            <h2>Идеальное преображение</h2>
+        </section>
+        <section id="winter">
+            <img src="img/galary/BMW_WINTER.jpg" alt="BMW poster" title="BMW poster">
+            <h2>При любой погоде</h2>
+        </section>
+        <section id="key">
+            <video autoplay muted loop id="keyColl">
+                <source src="video/cool_key.mp4" type="video/mp4">
+            </video>
+            <h2>Завораживающие инновации</h2>
+        </section>
+        <section id="liberty">
+            <img src="img/galary/liberty.jpg" alt="BMW poster" title="BMW poster">
+            <h2>Максимальная технологичность</h2>
+        </section>
+        <section id="time">
+            <img src="img/galary/supercars.jpg" alt="BMW poster" title="BMW poster">
+            <h2>Не смотря на возраст</h2>
+        </section>
+        <section id="red_fog">
+            <img src="img/galary/redpower.jpg" alt="BMW poster" title="BMW poster">
+            <h2>Яркий</h2>
+        </section>
+        <section id="distinct">
+            <video autoplay muted loop id="distinctBMW">
+                <source src="video/nozdri.mp4" type="video/mp4" title="BMW poster">
+            </video>
+            <h2>Отличительность</h2>
+        </section>
+        <section id="coffee">
+            <img src="img/galary/bmw_coffee.jpg" alt="BMW poster" title="BMW poster">
+            <h2>Надежность</h2>
+        </section>
+        <section id="design">
+            <img src="img/galary/desigh.jpg" alt="BMW poster" title="BMW poster">
+            <h2>Удобство в мелочах</h2>
+        </section>
+        <section id="artBmw">
+            <img src="img/galary/art_bmw.jpg" alt="BMW poster" title="BMW poster">
+            <h2>Пристрастность</h2>
+        </section>
+
+
+
+    </article>
+</main>
+<footer>
+    <nav class="footerNavigation">
+        <div class="quickLinks">
+            <h2>Главные ссылки сайта</h2>
+            <ul>
+                <li><a href="index.html" title="Главная" target="_blank">Главная</a></li>
+                <li><a href="galary.html" title="Галерея" target="_blank">Галерея</a></li>
+                <li><a href="blog.html" title="Блог" target="_blank">Блог</a></li>
+                <li><a href="contact.html" title="Контакты" target="_blank">Контакты</a></li>
+                <li><a href="#" class="endList " title="BMW in your country " data-bs-toggle="modal" data-bs-target="#exampleModal">BMW in your country </a></li>
+            </ul>
+        </div>
+        <div class="modelsLinks">
+            <h2>Модельный ряд</h2>
+            <ul>
+                <li><a href="BMW_E30.html" target="_blank" title="BMW E30">BMW E30</a></li>
+                <li><a href="BMW_E31.html" target="_blank" title="BMW E31">BMW E31</a></li>
+                <li><a href="BMW_E32.html" target="_blank" title="BMW E32">BMW E32</a></li>
+                <li><a href="BMW_E36.html" target="_blank" title="BMW E36">BMW E36</a></li>
+            </ul>
+        </div>
+        <div class="oficialLinks">
+            <h2>Официальные ссылки</h2>
+            <ul>
+                <li><a href="https://www.bmwgroup.com/en.html" target="_blank" title="BMW.com">BMW.com</a></li>
+                <li><a href="https://www.bmwgroup.com/en/general/kontakt.html" target="_blank" title="Контакты">Контакты</a></li>
+                <li><a href="https://www.bmw.com/en/design.html" target="_blank" title="Дизайнерская деятельность">Дизайнерская деятельность</a></li>
+                <li><a href="https://www.bmw.com/en/events-overview.html" target="_blank" title="События">События</a></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Наши контакты</h2>
+            <ul>
+                <li><a href="https://www.instagram.com/ia_molodec/" target="_blank" title="Instagram">Instagram <i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/vladimir-skorohod-90977b202/" target="_blank" title="Linkedin">Linkedin<i class="bi bi-linkedin"></i></a></li>
+                <li><a href="https://vk.com/mr_vl_skorohod" target="_blank" title="VK">VK<i class="bi bi-person-square"></i></a></li>
+                <li><a href="https://github.com/" target="_blank" title="GitHub">GitHub<i class="bi bi-github"></i></a></li>
+                <li><a href="mailto:mr.vl.skorohod@gmail.com" target="_blank" title="Mail">Mail<i class="bi bi-mailbox"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="footerNavigation mini">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item quickLinks">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Главные ссылки сайта
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="index.html" title="Главная" target="_blank">Главная</a></li>
+                            <li><a href="galary.html" title="Галерея" target="_blank">Галерея</a></li>
+                            <li><a href="blog.html" title="Блог" target="_blank">Блог</a></li>
+                            <li><a href="contact.html" title="Контакты" target="_blank">Контакты</a></li>
+                            <li><a href="#" class="endList " title="BMW in your country " data-bs-toggle="modal" data-bs-target="#exampleModal">BMW in your country </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item modelsLinks">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Модельный ряд
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="BMW_E30.html" target="_blank" title="BMW E30">BMW E30</a></li>
+                            <li><a href="BMW_E31.html" target="_blank" title="BMW E31">BMW E31</a></li>
+                            <li><a href="BMW_E32.html" target="_blank" title="BMW E32">BMW E32</a></li>
+                            <li><a href="BMW_E36.html" target="_blank" title="BMW E36">BMW E36</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item oficialLinks">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Официальные ссылки
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="https://www.bmwgroup.com/en.html" target="_blank" title="BMW.com">BMW.com</a></li>
+                            <li><a href="https://www.bmwgroup.com/en/general/kontakt.html" target="_blank" title="Контакты">Контакты</a></li>
+                            <li><a href="https://www.bmw.com/en/design.html" target="_blank" title="Дизайнерская деятельность">Дизайнерская деятельность</a></li>
+                            <li><a href="https://www.bmw.com/en/events-overview.html" target="_blank" title="События">События</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item contacts">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Наши контакты
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="https://www.instagram.com/ia_molodec/" target="_blank" title="Instagram">Instagram <i class="bi bi-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/vladimir-skorohod-90977b202/" target="_blank" title="Linkedin">Linkedin<i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="https://vk.com/mr_vl_skorohod" target="_blank" title="VK">VK<i class="bi bi-person-square"></i></a></li>
+                            <li><a href="https://github.com/" target="_blank" title="GitHub">GitHub<i class="bi bi-github"></i></a></li>
+                            <li><a href="mailto:mr.vl.skorohod@gmail.com" target="_blank" title="Mail">Mail<i class="bi bi-mailbox"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <p>&#169;2021 Copyright – All rights reserved</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="js/jqueryHelper.js"></script>
+</body>
+</html>

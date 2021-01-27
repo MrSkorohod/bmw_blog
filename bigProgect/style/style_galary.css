@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+header{
+    position: relative;
+}
+.mainNavigator {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mainNavigator ul {
+    display: flex;
+    padding-left: 0;
+    width: 800px;
+    justify-content: space-around;
+    margin: 15px auto;
+}
+.mainNavigator li{
+    list-style-type: none;
+}
+.mainNavigator li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    vertical-align: -20px;
+    transition: .3s color ease;
+}
+.mainNavigator li #models{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    vertical-align: -20px;
+    transition: .3s color ease;
+}
+.boder{
+    border-right: 2px solid #ffffff;
+    padding-right: 30px;
+}
+.mainNavigator a span{
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.mainNavigator svg {
+    height: 50px;
+    width: 50px;
+}
+.line{
+    height: 2px;
+    background-color: #fff;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.mainNavigator a:hover:not(.endList){
+    color: #0653b6;
+    border-bottom: 3px solid #0653b6;
+    z-index: 3;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-bottom: 32.5px;
+}
+.mainNavigator #models:hover{
+    color: #0653b6;
+    border-bottom: 3px solid #0653b6;
+    z-index: 3;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-bottom: 32.5px;
+}
+li.hovering {
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: all 10s ease 2s;
+}
+.model{
+    position: absolute;
+    display: none;
+    width: 100px;
+    left: 0;
+    top: 73px;
+}
+.hovering:hover .model{
+    display: flex;
+    flex-direction: column;
+}
+.model a {
+    padding: 10px 0;
+}
+
+.mainNavigator a.series:hover{
+    padding-bottom: 7px;
+}
+.smallNavigator {
+    display: none;
+}
+.video {
+    height: 90vh;
+}
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -2;
+}
+.mainBackground {
+    display: none;
+}
+.number h1 {
+    position: absolute;
+    color: rgba(250,250,250, 0.3);
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    left: 0;
+    bottom: 0;
+    font-size: 1000%;
+    z-index: -1;
+    margin: 0 auto;
+}
+article {
+    display: grid;
+    grid-template-areas:
+    "posterBMW posterBMW exibition exibition"
+    "posterBMW posterBMW generik generik"
+    "cyberpank oldvideo oldvideo sketh"
+    "winter winter key key"
+    "liberty liberty redFog redFog"
+    "times times redFog redFog"
+    "distinct coffee design artBwm";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px 400px 700px 350px 350px 400px;
+    grid-gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+#posterBMW {
+    grid-area: posterBMW;
+}
+#posterBMW img {
+    object-fit: cover;
+}
+#exibition {
+    grid-area: exibition;
+}
+#exibition img{
+    object-fit: cover;
+}
+#generik {
+    grid-area: generik;
+}
+#generik img {
+    object-fit: cover;
+}
+#old_video {
+    grid-area: oldvideo;
+}
+#sketh{
+    grid-area: sketh;
+}
+#cyberpank {
+    grid-area: cyberpank;
+}
+#winter {
+    grid-area: winter;
+}
+#key {
+    grid-area: key;
+}
+#liberty {
+    grid-area: liberty;
+}
+#time {
+    grid-area: times;
+}
+#red_fog{
+    grid-area: redFog;
+}
+#distinct{
+    grid-area: distinct;
+}
+#coffee {
+    grid-area: coffee;
+}
+#design {
+    grid-area: design;
+}
+#artBmw {
+    grid-area: artBwm;
+}
+section {
+    overflow: hidden;
+}
+section h2 {
+    position: relative;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    /*color: #212121;*/
+    font-size: 24px;
+    padding-left: 30px;
+    margin-top: -130px;
+    /*text-shadow: 2px 2px 0 #d7d7d7, 4px 4px 0 #bfbfbf;*/
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 0 #0653b6,
+    1px -1px 0 #0653b6,
+    -1px 1px 0 #0653b6,
+    -1px -1px 0 #0653b6,
+    1px 0 0 #0653b6,
+    0 1px 0 #0653b6,
+    -1px 0 0 #0653b6,
+    0 -1px 0 #0653b6;
+    z-index: 1;
+}
+section img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 2s ease;
+    position: relative;
+    z-index: -1;
+}
+section:hover img{
+    filter: brightness(0.35);
+    transform: scale(1.1);
+}
+#old_video video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: all 2s ease;
+    overflow: hidden;
+    z-index: -1;
+}
+#key video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: all 2s ease;
+    overflow: hidden;
+    z-index: -1;
+}
+#distinct video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: all 2s ease;
+    overflow: hidden;
+    z-index: -1;
+}
+section:hover video{
+    filter: brightness(0.5);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #262626;
+    padding: 100px 50px;
+}
+.footerNavigation {
+    display: flex;
+    justify-content: space-around;
+}
+.footerNavigation a, p{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #dfdfdf;
+}
+.footerNavigation h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+.footerNavigation li {
+    padding:15px 0;
+}
+.quickLinks a, .modelsLinks a, .oficialLinks a, .contacts a {
+    transition: all 0.3s ease;
+}
+.quickLinks a:hover, .modelsLinks a:hover, .oficialLinks a:hover, .contacts a:hover {
+    color: #0653b6;
+}
+.contacts a{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-title {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+}
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+}
+.modal-body h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #262626;
+    border-bottom: 1px solid #262626;
+}
+.modal-body li {
+    padding: 15px 0;
+}
+.modal-body a {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #262626;
+    transition: all 0.3s ease;
+}
+.modal-body a:hover{
+    color: #0653b6;
+}
+.mini {
+    display: none;
+}

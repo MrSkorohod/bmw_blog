@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+header{
+    position: relative;
+}
+.mainNavigator {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mainNavigator ul {
+    display: flex;
+    padding-left: 0;
+    width: 800px;
+    justify-content: space-around;
+    margin: 15px auto;
+}
+.mainNavigator li{
+    list-style-type: none;
+}
+.mainNavigator li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    vertical-align: -20px;
+    transition: .3s color ease;
+}
+.mainNavigator li #models{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    vertical-align: -20px;
+    transition: .3s color ease;
+}
+.boder{
+    border-right: 2px solid #ffffff;
+    padding-right: 30px;
+}
+.mainNavigator a span{
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.mainNavigator svg {
+    height: 50px;
+    width: 50px;
+}
+.line{
+    height: 2px;
+    background-color: #fff;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.mainNavigator a:hover:not(.endList){
+    color: #0653b6;
+    border-bottom: 3px solid #0653b6;
+    z-index: 3;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-bottom: 32.5px;
+}
+.mainNavigator #models:hover{
+    color: #0653b6;
+    border-bottom: 3px solid #0653b6;
+    z-index: 3;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-bottom: 32.5px;
+}
+li.hovering {
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: all 10s ease 2s;
+}
+.model{
+    position: absolute;
+    display: none;
+    width: 100px;
+    left: 0;
+    top: 73px;
+}
+.hovering:hover .model{
+    display: flex;
+    flex-direction: column;
+}
+.model a {
+    padding: 10px 0;
+}
+
+.mainNavigator a.series:hover{
+    padding-bottom: 7px;
+}
+.smallNavigator {
+    display: none;
+}
+.video {
+    height: 90vh;
+}
+#party {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -2;
+}
+.mainBackground {
+    display: none;
+}
+.number h1 {
+    position: absolute;
+    color: rgba(250,250,250, 0.3);
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    left: 0;
+    bottom: 0;
+    font-size: 1000%;
+    z-index: -1;
+    margin: 0 auto;
+}
+/*-------------------------------------------*/
+.cards {
+    margin: 30px auto;
+}
+.news nav {
+    margin: 120px 150px 25px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+}
+.cards h2, .news h2{
+     text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 10px auto 50px;
+}
+
+.logbook {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.card {
+    width: 30%;
+    /*flex-basis: 30%;*/
+    margin: 20px auto;
+}
+.image{
+    background: url("../img/blog/yellow.jpg") no-repeat 50% 50%;
+    height: 200px;
+    background-size: cover;
+}
+.infoPrev {
+    position: relative;
+
+    padding: 0 12px;
+    background-color: #fff;
+
+}
+.infoCard {
+    position: relative;
+    top: -28px;
+    display: flex;
+    flex-direction: column;
+    padding: 13px 13px 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 0 10px rgba(0,0,0,0.1) inset;
+    border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
+}
+.infoCard h3{
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+.infoCard p {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #1a1b20;
+}
+.infoCard a {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #0653b6;
+    text-decoration: none;
+}
+._1 {
+    background: url("../img/blog/blue_red.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+._2 {
+    background: url("../img/blog/race.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+._3 {
+    background: url("../img/blog/ride.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+._4{
+    background: url("../img/blog/red8.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+._5 {
+    background: url("../img/blog/arora.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+._6 {
+    background: url("../img/blog/open.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+._7 {
+    background: url("../img/blog/4seria.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+._8 {
+    background: url("../img/blog/lednik.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.news{
+    margin: 100px auto;
+    width: 80%;
+}
+.carousel-caption a {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    color: #dfdfdf;
+    text-decoration: none;
+}
+/*-------------------------------------------*/
+
+footer {
+    background-color: #262626;
+    padding: 100px 50px;
+}
+.footerNavigation {
+    display: flex;
+    justify-content: space-around;
+}
+.footerNavigation a, p{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #dfdfdf;
+}
+.footerNavigation h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+.footerNavigation li {
+    padding:15px 0;
+}
+.quickLinks a, .modelsLinks a, .oficialLinks a, .contacts a {
+    transition: all 0.3s ease;
+}
+.quickLinks a:hover, .modelsLinks a:hover, .oficialLinks a:hover, .contacts a:hover {
+    color: #0653b6;
+}
+.contacts a{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-title {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+}
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+}
+.modal-body h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #262626;
+    border-bottom: 1px solid #262626;
+}
+.modal-body li {
+    padding: 15px 0;
+}
+.modal-body a {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #262626;
+    transition: all 0.3s ease;
+}
+.modal-body a:hover{
+    color: #0653b6;
+}
+.mini {
+    display: none;
+}

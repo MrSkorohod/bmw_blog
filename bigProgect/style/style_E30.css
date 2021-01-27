@@ -1,0 +1,18 @@
+.car{
+    background: url("../img/attr/disk_e30.jpg") no-repeat ;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+.eye {
+    background: url("../img/BMWeyes/2.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.tuning{
+    background: url("../img/salon/salon_2.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
