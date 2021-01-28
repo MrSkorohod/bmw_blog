@@ -284,18 +284,12 @@ section:hover video{
     filter: brightness(0.5);
     transform: scale(1.1);
 }
-
-
-
-
-
-
-
-
-
 footer {
     background-color: #262626;
-    padding: 100px 50px;
+    padding: 100px 50px 20px;
+}
+footer p {
+    margin-top: 50px;
 }
 .footerNavigation {
     display: flex;
