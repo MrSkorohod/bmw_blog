@@ -282,7 +282,10 @@ cite {
 }
 footer {
     background-color: #262626;
-    padding: 100px 50px;
+    padding: 100px 50px 20px;
+}
+footer p {
+    margin-top: 50px;
 }
 .footerNavigation {
     display: flex;
