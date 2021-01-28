@@ -108,8 +108,16 @@ li.hovering {
     text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
     1px 1px 1px rgba(0, 0, 0, 0.6);
 }
-.model a:hover{
+.mainNavigator .hovering .model a:hover{
     text-shadow: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px 25px;
+    width: 100px;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: none;
 }
 
 .mainNavigator a.series:hover{
@@ -403,6 +411,7 @@ cite {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    background: white;
 }
 .openArticle.closing-button span {
     font-family: 'Exo 2', sans-serif;
