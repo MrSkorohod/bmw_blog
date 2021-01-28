@@ -83,6 +83,7 @@ header{
     left: 0;
     top: 0;
     padding-bottom: 32.5px;
+    cursor: pointer;
 }
 li.hovering {
     position: relative;
