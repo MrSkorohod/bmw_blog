@@ -209,6 +209,11 @@
         line-height: 24px;
     }
 }
+@media all and (max-width: 500px) {
+    .news nav {
+        margin: 0 10px 20px;
+    }
+}
 @media all and (max-width: 320px) {
     .number h1 {
         font-size: 50px;
