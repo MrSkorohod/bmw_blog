@@ -82,6 +82,7 @@ header{
     left: 0;
     top: 0;
     padding-bottom: 32.5px;
+    cursor: pointer;
 }
 li.hovering {
     position: relative;
@@ -102,6 +103,19 @@ li.hovering {
 }
 .model a {
     padding: 10px 0;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+.mainNavigator .hovering .model a:hover{
+    text-shadow: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px 25px;
+    width: 100px;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: none;
 }
 
 .mainNavigator a.series:hover{
