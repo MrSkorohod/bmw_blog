@@ -653,9 +653,10 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="js/jqueryHelper.js"></script>
 <script>
-    let link = document.querySelector("#openArticle");
+   let link = document.querySelector("#openArticle");
     let btn = document.getElementById("close");
-    let element = document.querySelector('.nowPrev');
+    let element = document.querySelector('.carBy');
+    let element2 = document.querySelector(".inst")
     let article = document.querySelector(".hidDiv");
     link.addEventListener("click", function (el) {
         article.style.display = "block";
@@ -663,37 +664,44 @@
         btn.style.display = "block";
     });
 
-    let Visible = function (target) {
+    let Visible = function (elem1, elem2) {
        let targetPosition = {
-                top: window.pageYOffset + target.getBoundingClientRect().top + 400,
-                left: window.pageXOffset + target.getBoundingClientRect().left,
-                right: window.pageXOffset + target.getBoundingClientRect().right,
-                bottom: window.pageYOffset + target.getBoundingClientRect().bottom
+                top: window.pageYOffset + elem1.getBoundingClientRect().top + 200,
+                bottom: window.pageYOffset + elem1.getBoundingClientRect().bottom
             },
             windowPosition = {
                 top: window.pageYOffset,
-                left: window.pageXOffset,
-                right: window.pageXOffset + document.documentElement.clientWidth,
                 bottom: window.pageYOffset + document.documentElement.clientHeight
-            };
+            },
+           target2Position = {
+           top: window.pageYOffset + elem2.getBoundingClientRect().top,
+           bottom: window.pageYOffset + elem2.getBoundingClientRect().bottom - 500
+        };
 
-        if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
-            targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
-            targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
-            targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+        if ((targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+            targetPosition.top < windowPosition.bottom) ||
+            (target2Position.top < windowPosition.bottom &&
+            target2Position.bottom > windowPosition.top)) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
             btn.style.display = "none";
         }
+        else if ((targetPosition.top < windowPosition.bottom ||
+                target2Position.bottom < windowPosition.top) &&
+                (targetPosition.top > windowPosition.bottom ||
+                target2Position.bottom > windowPosition.top)&&
+                link.style.display === "none"){
+            btn.style.display = "block";
+        }
+
+
     };
     window.addEventListener('scroll', function() {
-        Visible (element);
+        Visible (element, element2);
     });
-    Visible (element);
     btn.addEventListener("click", function (el) {
         article.style.display = "none";
         link.style.display = "block";
         btn.style.display = "none";
     });
-
 </script>
 </body>
 </html>
